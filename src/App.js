@@ -1,26 +1,37 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import HomeComponent from "./components/home";
+import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import {useTranslation, withTranslation} from "react-i18next";
+
+const theme = createMuiTheme({
+    typography: {
+        fontFamily: [
+            '-apple-system',
+            'BlinkMacSystemFont',
+            '"Segoe UI"',
+            'Roboto',
+            '"Helvetica Neue"',
+            'Arial',
+            'sans-serif',
+            '"Apple Color Emoji"',
+            '"Segoe UI Emoji"',
+            '"Segoe UI Symbol"',
+        ].join(','),
+    },
+
+});
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    const { t, i18n } = useTranslation();
+    return (
+    <div style={{direction:i18n.language==='ar' ?  'rtl' : 'ltr'}}>
+        <ThemeProvider theme={theme}>
+                <HomeComponent></HomeComponent>
+        </ThemeProvider>
     </div>
   );
 }
 
-export default App;
+export default withTranslation()(App);
