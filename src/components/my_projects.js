@@ -11,6 +11,12 @@ import jqueryLogo from "../res/jquery.png"
 import nodeLogo from "../res/node.png"
 import projects from "../data/projects";
 import {withTranslation} from "react-i18next";
+import Chip from "@material-ui/core/Chip";
+import Button from "@material-ui/core/Button";
+import IconButton from "@material-ui/core/IconButton";
+import Icon from "@material-ui/core/Icon";
+import {Launch} from "@material-ui/icons";
+import GalleryDialog from "./gallery-dialog";
 
 const classes = (theme) => ({
     line: {
@@ -35,7 +41,24 @@ class MyProjectsComponent extends Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            open: false
+        };
     }
+
+    setOpen = (value)=> {
+      this.setState({
+          open: value
+      });
+    };
+
+    handleClickOpen = () => {
+        this.setOpen(true);
+    };
+
+    handleClose = () => {
+        this.setOpen(false);
+    };
 
     render() {
         const {theme, classes, t} = this.props;
@@ -67,12 +90,21 @@ class MyProjectsComponent extends Component {
                                       xs={10} md={5}>
                                     <Grid item>
                                         <Typography variant="h4" className={classes.appTitle}>
-                                            {project.title}
+                                            {t(project.title)}
+                                            <IconButton onClick={this.handleClickOpen} aria-label="delete" style={{
+                                                transform: 'translate(-10px,-15px)'
+                                            }} >
+                                                <Launch fontSize="small" />
+                                            </IconButton>
+                                            <Chip size="small"
+                                                  style={{background:'#0e0153',color:'white'}}
+                                                  label={project.year} />
                                         </Typography>
+
                                     </Grid>
                                     <Grid item>
                                         <Typography paragraph className={classes.appTitle}>
-                                            {project.desciption}
+                                            {t(project.desciption)}
                                         </Typography>
                                     </Grid>
                                     <Grid item container direction="row" className={classes.appTitle}
@@ -107,6 +139,7 @@ class MyProjectsComponent extends Component {
                                 (index !== projects.length - 1) ? <div className={classes.separator}></div> : '']
                         )
                         }
+                        <GalleryDialog open={this.state.open} handleClose={this.handleClose}/>
 
 
                     </Grid>

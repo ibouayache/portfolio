@@ -42,7 +42,7 @@ import {
 } from '@material-ui/icons';
 import {withTranslation} from "react-i18next";
 import CVDialog from "./cv_dialog";
-
+import cv from "../res/about1.png";
 const drawerWidth = 240;
 const classes = (theme) => ({
     root: {
@@ -271,6 +271,12 @@ class HomeComponent extends Component {
                             <ListItemText primary={text}/>
                         </ListItem>
                     ))}
+                    <ListItem button href="https://drive.google.com/file/d/1Z5ztUG_xSGms4oUL_-vRCZpYxNaF5fh1/view?usp=sharing">
+                        <ListItemIcon>
+                            <GetApp color="white"></GetApp>
+                        </ListItemIcon>
+                        <ListItemText primary={t("CV")}/>
+                    </ListItem>
                     <Menu
                         id="simple1-menu"
                         anchorOrigin={{
@@ -338,8 +344,9 @@ class HomeComponent extends Component {
                                     </Button>
                                 </Grid>
                                 <Grid item xs={1}>
-                                    <Button onClick={this.openCVDialog} className={classes.headerBtn}>
-                                        <GetApp color="white"></GetApp> CV
+
+                                    <Button href={cv} className={classes.headerBtn}>
+                                        <GetApp color="white"></GetApp> {t("CV")}
                                     </Button>
                                     <CVDialog open={this.state.cvDialogOpened} closeCVDialog={this.closeCVDialog}></CVDialog>
                                 </Grid>

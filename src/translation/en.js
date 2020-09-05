@@ -12,6 +12,29 @@ const translation = {
     "CONTENT": "Content",
     "SEND": "Send",
     "FOOTER_INFO": "BOUAYACHE Mohamed Islam ©2020",
-    "LANGAGE": "Language"
+    "LANGAGE": "Language",
+    "REQUIRED": "*Required",
+    "SUCCESS_MSG": "Message sent successfully.",
+    "ERROR_MSG": "An error has occurred.",
+    "CV": "CV",
+    "PROJECTS": {
+        "MYPARKING": {
+            "TITLE": "My Parking",
+            "DESCRIPTION": "Cars Website fr"
+        },
+        "SAYARADZ": {
+            "TITLE": "Sayara DZ",
+            "DESCRIPTION": "Cars Website fr"
+        },
+        "DZNOW": {
+            "TITLE": "DZ Now",
+            "DESCRIPTION": "Cars Website fr"
+        },
+        "LOGISTIQUE": {
+            "TITLE": "Système de gestion logistique",
+            "DESCRIPTION": "Cars Website fr"
+        },
+    }
+
 };
 export default translation;

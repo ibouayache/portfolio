@@ -17,6 +17,7 @@
     "jss": "latest",
     "jss-rtl": "^0.3.0",
     "react": "^16.13.1",
+    "react-bnb-gallery": "^1.4.4",
     "react-dom": "^16.13.1",
     "react-hook-form": "^6.7.2",
     "react-i18next": "^11.7.2",

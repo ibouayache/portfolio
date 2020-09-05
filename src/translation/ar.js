@@ -12,6 +12,28 @@ const translation = {
     "CONTENT": "المحتوى",
     "SEND": "إرسال",
     "FOOTER_INFO": "بوعياش محمد إسلام 2020©",
-    "LANGAGE": "اللغة"
+    "LANGAGE": "اللغة",
+    "REQUIRED": "*اجباري",
+    "SUCCESS_MSG": "تم ارسال الرسالة بنجاح.",
+    "ERROR_MSG": "حدث خطأ.",
+    "CV": "CV",
+    "PROJECTS": {
+        "MYPARKING": {
+            "TITLE": "My Parking",
+            "DESCRIPTION": "Cars Website fr"
+        },
+        "SAYARADZ": {
+            "TITLE": "Sayara DZ",
+            "DESCRIPTION": "Cars Website fr"
+        },
+        "DZNOW": {
+            "TITLE": "DZ Now",
+            "DESCRIPTION": "Cars Website fr"
+        },
+        "LOGISTIQUE": {
+            "TITLE": "Système de gestion logistique",
+            "DESCRIPTION": "Cars Website fr"
+        },
+    }
 };
 export default translation;

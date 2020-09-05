@@ -84,21 +84,21 @@ let ContactForm = props => {
         <Grid item xs={12}>
             <CssTextField style={{width: '100%'}} variant="outlined"
                           error={errors.name}
-                          helperText={errors.name ? "Required" : ''}
+                          helperText={errors.name ? t("REQUIRED") : ''}
                           name="name" inputRef={register({required: true})} label={t("NAME")}/>
 
         </Grid>
         <Grid item style={{paddingTop: '15px'}} xs={12}>
             <CssTextField style={{width: '100%'}} variant="outlined"
                           error={errors.email}
-                          helperText={errors.email ? "Required" : ''}
+                          helperText={errors.email ? t("REQUIRED") : ''}
                           name="email" inputRef={register({required: true})} label={t("EMAIL")}/>
         </Grid>
         <Grid item style={{paddingTop: '15px'}} xs={12}>
             <CssTextField style={{width: '100%'}} variant="outlined"
                           error={errors.content}
                           multiline rows={4}
-                          helperText={errors.content ? "Required" : ''}
+                          helperText={errors.content ? t("REQUIRED") : ''}
                           name="content" inputRef={register({required: true})} label={t("CONTENT")}/>
         </Grid>
         <Grid container item alignItems="center" justify="space-between" style={{paddingTop: '15px'}} xs={12}>
@@ -106,12 +106,12 @@ let ContactForm = props => {
                 {props.msgState.isLoading ?  <CircularProgress size={25} style={{color:"white"}}/> : '' }
                 <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
                     <Alert elevation={6} variant="filled" onClose={handleClose} severity="success">
-                        Message envoyé avec succés
+                        {t("SUCCESS_MSG")}
                     </Alert>
                 </Snackbar>
                 <Snackbar open={open2} autoHideDuration={6000} onClose={handleClose}>
                     <Alert elevation={6} variant="filled" onClose={handleClose} severity="error">
-                        Une erreur s'est produite
+                        {t("ERROR_MSG")}
                     </Alert>
                 </Snackbar>
             </Grid>

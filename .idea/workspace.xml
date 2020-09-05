@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="414eeb78-bd1c-48b6-b00c-99e8e0d3d18b" name="Default Changelist" comment="" />
+    <list default="true" id="414eeb78-bd1c-48b6-b00c-99e8e0d3d18b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/gallery-dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/dznow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/myparking.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/sayaradz.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/my_projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/my_projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/translation/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/translation/ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/translation/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/translation/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/translation/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/translation/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/translation/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/translation/i18n.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,23 +52,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/res" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\User\AppData\Local\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\WebstormProjects\portfolio\src\translation" />
-      <recent name="C:\Users\User\WebstormProjects\portfolio\src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\portfolio\src\res" />
       <recent name="C:\Users\User\WebstormProjects\portfolio\public" />
       <recent name="C:\Users\User\WebstormProjects\portfolio\src\reducers" />
       <recent name="C:\Users\User\WebstormProjects\portfolio\src\actions" />
-      <recent name="C:\Users\User\WebstormProjects\portfolio\src\res" />
       <recent name="C:\Users\User\WebstormProjects\portfolio\src\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\portfolio\src\translation" />
+      <recent name="C:\Users\User\WebstormProjects\portfolio\src" />
     </key>
   </component>
   <component name="RunManager">
@@ -95,7 +112,8 @@
       <workItem from="1598889054492" duration="8546000" />
       <workItem from="1598956334535" duration="12945000" />
       <workItem from="1599061651360" duration="10348000" />
-      <workItem from="1599215547525" duration="13892000" />
+      <workItem from="1599215547525" duration="14226000" />
+      <workItem from="1599302875015" duration="11169000" />
     </task>
     <servers />
   </component>
@@ -135,10 +153,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1598957212541" />
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1599237607606">
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1599319789189">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1599237607606" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1599319789189" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1598036788226">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

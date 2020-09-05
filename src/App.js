@@ -5,6 +5,8 @@ import HomeComponent from "./components/home";
 import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import {useTranslation, withTranslation} from "react-i18next";
 
+import 'react-bnb-gallery/dist/style.css'
+
 const theme = createMuiTheme({
     typography: {
         fontFamily: [
