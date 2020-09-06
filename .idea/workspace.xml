@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="414eeb78-bd1c-48b6-b00c-99e8e0d3d18b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/gallery-dialog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/dznow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/myparking.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/sayaradz.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/gallery-dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallery-dialog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/my_projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/my_projects.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/translation/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/translation/ar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/translation/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/translation/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/translation/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/translation/fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/translation/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/translation/i18n.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,10 +51,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\WebstormProjects\portfolio\src\res" />
+      <recent name="C:\Users\User\WebstormProjects\portfolio\src\data\captures\sayaradz" />
+      <recent name="C:\Users\User\WebstormProjects\portfolio\src\data\captures\dznow" />
+      <recent name="C:\Users\User\WebstormProjects\portfolio\src\data\captures\myparking" />
       <recent name="C:\Users\User\WebstormProjects\portfolio\public" />
-      <recent name="C:\Users\User\WebstormProjects\portfolio\src\reducers" />
-      <recent name="C:\Users\User\WebstormProjects\portfolio\src\actions" />
-      <recent name="C:\Users\User\WebstormProjects\portfolio\src\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\WebstormProjects\portfolio\src\translation" />
@@ -113,7 +103,9 @@
       <workItem from="1598956334535" duration="12945000" />
       <workItem from="1599061651360" duration="10348000" />
       <workItem from="1599215547525" duration="14226000" />
-      <workItem from="1599302875015" duration="11169000" />
+      <workItem from="1599302875015" duration="11372000" />
+      <workItem from="1599386548140" duration="8196000" />
+      <workItem from="1599426538100" duration="3038000" />
     </task>
     <servers />
   </component>

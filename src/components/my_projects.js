@@ -16,6 +16,14 @@ import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import Icon from "@material-ui/core/Icon";
 import {Launch} from "@material-ui/icons";
+import FsLightbox from 'fslightbox-react';
+import myparking_img1 from "../data/captures/myparking/myparking_img1.jpg";
+import myparking_img2 from "../data/captures/myparking/myparking_img2.jpg";
+import myparking_img3 from "../data/captures/myparking/myparking_img3.jpg";
+import myparking_img4 from "../data/captures/myparking/myparking_img4.jpg";
+import myparking_img5 from "../data/captures/myparking/myparking_img5.jpg";
+
+
 import GalleryDialog from "./gallery-dialog";
 
 const classes = (theme) => ({
@@ -42,7 +50,8 @@ class MyProjectsComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            open: false
+            open: false,
+            captures: [],
         };
     }
 
@@ -51,17 +60,25 @@ class MyProjectsComponent extends Component {
           open: value
       });
     };
-
-    handleClickOpen = () => {
-        this.setOpen(true);
+    handleClickOpen = (project) => {
+        this.setState({
+            captures: project.captures
+        });
+        this.setOpen(!this.state.open);
     };
 
     handleClose = () => {
-        this.setOpen(false);
+        this.setOpen(!this.state.open);
+        this.setState({
+            captures: [myparking_img1]
+        });
     };
 
     render() {
         const {theme, classes, t} = this.props;
+        const sources = [
+            myparking_img1, myparking_img2, myparking_img3,myparking_img4, myparking_img5
+        ];
         return <div>
             <Grid
                 container
@@ -91,11 +108,13 @@ class MyProjectsComponent extends Component {
                                     <Grid item>
                                         <Typography variant="h4" className={classes.appTitle}>
                                             {t(project.title)}
-                                            <IconButton onClick={this.handleClickOpen} aria-label="delete" style={{
+                                            <IconButton onClick={() => this.handleClickOpen(project)}
+                                            aria-label="delete" style={{
                                                 transform: 'translate(-10px,-15px)'
                                             }} >
                                                 <Launch fontSize="small" />
                                             </IconButton>
+
                                             <Chip size="small"
                                                   style={{background:'#0e0153',color:'white'}}
                                                   label={project.year} />
@@ -139,7 +158,11 @@ class MyProjectsComponent extends Component {
                                 (index !== projects.length - 1) ? <div className={classes.separator}></div> : '']
                         )
                         }
-                        <GalleryDialog open={this.state.open} handleClose={this.handleClose}/>
+
+
+                        <GalleryDialog images={this.state.captures}
+                                       open={this.state.open}
+                                       handleClose={this.handleClose}/>
 
 
                     </Grid>
