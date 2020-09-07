@@ -22,7 +22,6 @@ const theme = createMuiTheme({
             '"Segoe UI Symbol"',
         ].join(','),
     },
-
 });
 
 function App() {

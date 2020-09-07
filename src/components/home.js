@@ -43,6 +43,7 @@ import {
 import {withTranslation} from "react-i18next";
 import CVDialog from "./cv_dialog";
 import cv from "../res/about1.png";
+import ToolsComponent from "./tools";
 const drawerWidth = 240;
 const classes = (theme) => ({
     root: {
@@ -55,7 +56,7 @@ const classes = (theme) => ({
         },
     },
     appBar: {
-
+        zIndex:999,
         [theme.breakpoints.up('sm')]: {
             // width: `calc(100% - ${drawerWidth}px)`,
             width: '100%'
@@ -130,6 +131,10 @@ const classes = (theme) => ({
         height: '24px',
         borderRadius: '15px',
         backgroundSize: '100%'
+    },
+    currentMenu: {
+        color: '#3886c6',
+        fontWeight: 'bold'
     }
 });
 
@@ -144,7 +149,10 @@ class HomeComponent extends Component {
             anchorEl: null,
             anchorEl2: null,
             cvDialogOpened: false
-        }
+        };
+        this.contactRef = React.createRef();
+        this.projectsRef = React.createRef();
+        this.aboutRef = React.createRef();
     }
 
     setCVDialogOpen = (value) =>{
@@ -162,7 +170,8 @@ class HomeComponent extends Component {
     setMobileOpen = (value) => {
         this.setState({
             mobileOpen: value,
-            coloredHeader: false
+            coloredHeader: false,
+            currentMenu: 0
         })
     };
 
@@ -184,6 +193,23 @@ class HomeComponent extends Component {
 
     handleScroll = event => {
         let scrollTop = window.scrollY;
+        if (scrollTop>this.aboutRef.current.offsetTop-120 && scrollTop<this.projectsRef.current.offsetTop-120) {
+            this.setState({
+                currentMenu: 1
+            });
+        } else if (scrollTop>this.projectsRef.current.offsetTop-120 && scrollTop<this.contactRef.current.offsetTop-120) {
+            this.setState({
+                currentMenu: 2
+            });
+        } else if (scrollTop>this.contactRef.current.offsetTop-120) {
+            this.setState({
+                currentMenu: 3
+            });
+        } else {
+            this.setState({
+                currentMenu: 0
+            });
+        }
         console.log(scrollTop);
         this.setState({
             coloredHeader: scrollTop > 100
@@ -222,7 +248,10 @@ class HomeComponent extends Component {
         }
     }
 
+    scrollToMyRef = (ref) => window.scrollTo(0, ref.current.offsetTop-70);
+
     render() {
+
         const {window} = this.props;
         const {classes, theme, t, i18n} = this.props;
         // const [, ] = React.useState(false);
@@ -329,17 +358,20 @@ class HomeComponent extends Component {
                         >
                             <Hidden smDown>
                                 <Grid item md={2}>
-                                    <Button className={classes.headerBtn}>
+                                    <Button onClick={() => this.scrollToMyRef(this.aboutRef)}
+                                        className={this.state.currentMenu===1 ? classes.currentMenu : classes.headerBtn}>
                                         {t("ABOUT_ME")}
                                     </Button>
                                 </Grid>
                                 <Grid item md={2}>
-                                    <Button className={classes.headerBtn}>
+                                    <Button  onClick={() => this.scrollToMyRef(this.projectsRef)}
+                                             className={this.state.currentMenu===2 ? classes.currentMenu : classes.headerBtn}>
                                         {t("MY_PROJECTS_MAJ")}
                                     </Button>
                                 </Grid>
                                 <Grid item md={2}>
-                                    <Button className={classes.headerBtn}>
+                                    <Button onClick={() => this.scrollToMyRef(this.contactRef) }
+                                            className={this.state.currentMenu===3 ? classes.currentMenu : classes.headerBtn}>
                                         {t("CONTACT_MAJ")}
                                     </Button>
                                 </Grid>
@@ -488,25 +520,29 @@ class HomeComponent extends Component {
 
                         <Grid
                             container
-
                             direction="column"
                             justify="center"
                             alignItems="stretch"
                         >
                             <Grid item xs={12} style={{marginBottom: '50px'}}>
-                                <AboutMeComponent></AboutMeComponent>
+                                <div  ref={this.aboutRef}></div>
+                                <AboutMeComponent/>
                             </Grid>
-                            <Grid item xs={12} style={{marginBottom: '50px'}}>
-                                <MyProjectsComponent></MyProjectsComponent>
+                            <Grid item xs={12} style={{marginBottom: '100px'}}>
+                                <div  ref={this.projectsRef}></div>
+                                <MyProjectsComponent/>
                             </Grid>
-                            <Grid item xs={12}>
 
-                            </Grid>
 
                         </Grid>
                     </Container>
+                    <div  style={{marginBottom: '100px',
+                        background: 'linear-gradient(180deg, rgba(229,224,255,1) 0%, rgba(255,255,255,1) 100%)'}}>
+                        <ToolsComponent/>
+                    </div>
                     <div style={{backgroundColor: '#12093e'}}>
                         <Container maxWidth="xl">
+                            <div  ref={this.contactRef}></div>
                             <ContactComponent></ContactComponent>
                         </Container>
                     </div>

@@ -37,6 +37,14 @@ const classes = (theme) => ({
             textAlign: 'center',
             justifyContent: 'center'
         },
+        '&:hover': {
+            cursor:'pointer',
+            color: '#0e0153',
+            textDecoration: 'underline'
+        },
+        '&:hover .MuiIconButton-root': {
+            color: '#0e0153',
+        }
     },
     separator: {
         width: '100%',
@@ -100,15 +108,16 @@ class MyProjectsComponent extends Component {
                         {projects.map( (project, index) =>
                             [<Grid item container direction="row" justify="center" alignItems="center">
                                 {/*<Hidden mdUp>*/}
-                                <Grid item container justify="center" alignItems="center" xs={8} md={7}>
+                                <Grid item container justify="center" alignItems="center" xs={9} md={7}>
                                     <img src={project.picture} style={{width: '100%', height: 'auto'}}/>
                                 </Grid>
                                 <Grid item container direction="column" justify="flex-start" alignItems="stretch"
                                       xs={10} md={5}>
                                     <Grid item>
-                                        <Typography variant="h4" className={classes.appTitle}>
+                                        <Typography  onClick={() => this.handleClickOpen(project)}
+                                                     variant="h4" className={classes.appTitle}>
                                             {t(project.title)}
-                                            <IconButton onClick={() => this.handleClickOpen(project)}
+                                            <IconButton
                                             aria-label="delete" style={{
                                                 transform: 'translate(-10px,-15px)'
                                             }} >
@@ -160,7 +169,7 @@ class MyProjectsComponent extends Component {
                         }
 
 
-                        <GalleryDialog images={this.state.captures}
+                        <GalleryDialog captures={this.state.captures}
                                        open={this.state.open}
                                        handleClose={this.handleClose}/>
 

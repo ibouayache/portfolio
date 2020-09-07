@@ -178,7 +178,7 @@ class ContactComponent extends Component {
                 container
                 direction="column"
                 justify="center"
-                spacing={6}
+                spacing={3}
                 alignItems="center"
             >
                 <Grid container direction="column" alignItems="center" justify="center" item>
@@ -186,13 +186,19 @@ class ContactComponent extends Component {
                         {t("CONTACT_MAJ")}
                     </Typography>
                     <div className={classes.line}></div>
+
+                </Grid>
+                <Grid item>
+                    <Typography style={{ color: 'white'}} paragraph>
+                        Envoyez moi vos messages ou questions ?
+                    </Typography>
                 </Grid>
                 <Grid container item>
                     <Container maxWidth="sm">
                         <Grid direction="column" justify="center" alignItems="stretch">
                             <ContactForm/>
                             <Grid container direction="column" alignItems="center" item justify="center"
-                                  style={{paddingTop: '50px', paddingBottom: '20px'}} xs={12}>
+                                  style={{paddingTop: '5px', paddingBottom: '15px'}} xs={12}>
                                 <Grid item xs={6} container justify="center" alignItems="center">
                                     <Button className={classes.socialBtn}>
                                         <img src={linkedin} style={{width: '25px'}}/>
