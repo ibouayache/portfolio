@@ -3,15 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="414eeb78-bd1c-48b6-b00c-99e8e0d3d18b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/gallery-dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallery-dialog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about_me.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about_me.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/my_projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/my_projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/material.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/material.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/translation/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/translation/ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/translation/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/translation/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/translation/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/translation/fr.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +107,11 @@
       <workItem from="1599302875015" duration="11372000" />
       <workItem from="1599386548140" duration="8196000" />
       <workItem from="1599426538100" duration="3404000" />
-      <workItem from="1599476144665" duration="8871000" />
+      <workItem from="1599476144665" duration="8939000" />
+      <workItem from="1599588035084" duration="159000" />
+      <workItem from="1599596544436" duration="2188000" />
+      <workItem from="1599647242643" duration="6154000" />
+      <workItem from="1599743946305" duration="2463000" />
     </task>
     <servers />
   </component>
@@ -150,10 +151,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1598957212541" />
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1599500383664">
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1599650036346">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1599500383664" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1599650036346" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1598036788226">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

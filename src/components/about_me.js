@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {withStyles} from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-import img1 from "../res/about1.png"
 import img2 from "../res/about2.png"
 import img3 from "../res/about3.png"
 import img4 from "../res/about4.png"
@@ -15,6 +14,7 @@ import {withTranslation} from "react-i18next";
 import {getSocialLinks} from "../actions/test";
 import testReducer from "../reducers/test";
 import {connect} from "react-redux";
+import about from "../data/about";
 
 const classes = (theme) => ({
     line: {
@@ -45,13 +45,6 @@ class AboutMeComponent extends Component {
 
 
         const {theme, classes, t} = this.props;
-        const items = [
-            {id: 1, title: 'item #1'},
-            {id: 2, title: 'item #2'},
-            {id: 3, title: 'item #3'},
-            {id: 4, title: 'item #4'},
-            {id: 5, title: 'item #5'}
-        ];
         const responsive = {
             superLargeDesktop: {
                 // the naming can be any, depends on you.
@@ -92,102 +85,29 @@ class AboutMeComponent extends Component {
                     <Grid item xs={12}>
                         <div style={{width: '94vw'}}>
                             <Carousel  responsive={responsive}>
+                                {about.map(item=>(
+                                    <div>
+                                        <Grid direction="column" spacing={1} container alignItems="center" justify="center">
+                                            <Grid container xs={4} item>
+                                                <Grid item>
+                                                    <img src={item.image} style={{width:'100%'}}/>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid item>
+                                                <Typography style={{color:'#3886c6'}} variant="h6">
+                                                    {t(item.title)}
+                                                </Typography>
+                                            </Grid>
+                                            <Grid item xs={7}>
+                                                <Typography paragraph style={{textAlign: "center"}}>
+                                                    {t(item.description)}
+                                                </Typography>
+                                            </Grid>
+                                        </Grid>
+                                    </div>
+                                ))}
 
-                                <div>
-                                    <Grid direction="column" container alignItems="center" justify="center">
-                                        <Grid container xs={4} item>
-                                            <Grid item>
-                                                <img src={img1} style={{width:'100%'}}/>
-                                            </Grid>
-                                        </Grid>
-                                        <Grid item>
-                                            <Typography variant="h5">
-                                                Developpement
-                                            </Typography>
-                                        </Grid>
-                                        <Grid item xs={6}>
-                                            <Typography paragraph style={{textAlign: "center"}}>
-                                                Développment web frontend et backend , responsive
-                                            </Typography>
-                                        </Grid>
-                                    </Grid>
-                                </div>
-                                <div>
-                                    <Grid direction="column" container alignItems="center" justify="center">
-                                        <Grid container xs={4} item>
-                                            <Grid item>
-                                                <img src={img1} style={{width:'100%'}}/>
-                                            </Grid>
-                                        </Grid>
-                                        <Grid item>
-                                            <Typography variant="h5">
-                                                Developpement
-                                            </Typography>
-                                        </Grid>
-                                        <Grid item xs={6}>
-                                            <Typography paragraph style={{textAlign: "center"}}>
-                                                Développment web frontend et backend , responsive
-                                            </Typography>
-                                        </Grid>
-                                    </Grid>
-                                </div>
-                                <div>
-                                    <Grid direction="column" container alignItems="center" justify="center">
-                                        <Grid container xs={4} item>
-                                            <Grid item>
-                                                <img src={img1} style={{width:'100%'}}/>
-                                            </Grid>
-                                        </Grid>
-                                        <Grid item>
-                                            <Typography variant="h5">
-                                                Developpement
-                                            </Typography>
-                                        </Grid>
-                                        <Grid item xs={6}>
-                                            <Typography paragraph style={{textAlign: "center"}}>
-                                                Développment web frontend et backend , responsive
-                                            </Typography>
-                                        </Grid>
-                                    </Grid>
-                                </div>
-                                <div>
-                                    <Grid direction="column" container alignItems="center" justify="center">
-                                        <Grid container xs={4} item>
-                                            <Grid item>
-                                                <img src={img1} style={{width:'100%'}}/>
-                                            </Grid>
-                                        </Grid>
-                                        <Grid item>
-                                            <Typography variant="h5">
-                                                Developpement
-                                            </Typography>
-                                        </Grid>
-                                        <Grid item xs={6}>
-                                            <Typography paragraph style={{textAlign: "center"}}>
-                                                Développment web frontend et backend , responsive
-                                            </Typography>
-                                        </Grid>
-                                    </Grid>
-                                </div>
-                                <div>
-                                    <Grid direction="column" container alignItems="center" justify="center">
-                                        <Grid container xs={4} item>
-                                            <Grid item>
-                                                <img src={img1} style={{width:'100%'}}/>
-                                            </Grid>
-                                        </Grid>
-                                        <Grid item>
-                                            <Typography variant="h5">
-                                                Developpement
-                                            </Typography>
-                                        </Grid>
-                                        <Grid item xs={6}>
-                                            <Typography paragraph style={{textAlign: "center"}}>
-                                                Développment web frontend et backend , responsive
-                                            </Typography>
-                                        </Grid>
-                                    </Grid>
-                                </div>
+
                                 {/*<div>Item 2</div>*/}
                                 {/*<div>Item 3</div>*/}
                                 {/*<div>Item 4</div>*/}

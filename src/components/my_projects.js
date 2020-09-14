@@ -46,6 +46,18 @@ const classes = (theme) => ({
             color: '#0e0153',
         }
     },
+    appDescription: {
+        textAlign: 'justify',
+        [theme.breakpoints.down('sm')]: {
+            textAlignLast: 'center'
+        },
+    },
+    appTech: {
+        [theme.breakpoints.down('sm')]: {
+            textAlign: 'center',
+            justifyContent: 'center'
+        },
+    },
     separator: {
         width: '100%',
         height: '1px',
@@ -131,11 +143,15 @@ class MyProjectsComponent extends Component {
 
                                     </Grid>
                                     <Grid item>
-                                        <Typography paragraph className={classes.appTitle}>
+                                        <Typography paragraph className={classes.appDescription}>
                                             {t(project.desciption)}
                                         </Typography>
+                                        <div className={classes.appDescription}>
+                                            <strong>{t("APP_LANG")}</strong> {t(project.lang)}
+                                        </div>
+
                                     </Grid>
-                                    <Grid item container direction="row" className={classes.appTitle}
+                                    <Grid item container direction="row" className={classes.appTech}
                                           alignItems="center">
                                         {
                                             project.technologies.map(tech =>

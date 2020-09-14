@@ -35,7 +35,8 @@ import sayaradz_img13 from "./captures/sayaradz/sayaradz_img13.jpg";
 
 const projects = [ {
     title: 'PROJECTS.MYPARKING.TITLE',
-    desciption: '',
+    desciption: 'PROJECTS.MYPARKING.DESCRIPTION',
+    lang: 'PROJECTS.MYPARKING.LANG',
     year: '2020',
     picture: myparking,
     technologies: [kotlinLogo,djangoLogo, hereLogo, herokuLogo],
@@ -64,9 +65,29 @@ const projects = [ {
         //     thumbnail: 'https://picsum.photos/id/1019/250/150/',
         // },
     ]
-},  {
+}, {
+    title: 'PROJECTS.DZNOW.TITLE',
+    desciption: 'PROJECTS.DZNOW.DESCRIPTION',
+    lang: 'PROJECTS.DZNOW.LANG',
+    picture: dznow,
+    year: '2019',
+    technologies: [kotlinLogo ,nodeLogo, materialLogo, herokuLogo],
+    captures: [
+        {
+            photo: dznow_img1, //'https://picsum.photos/id/1015/1000/600/',
+            thumbnail: dznow_img1, //'https://picsum.photos/id/1015/250/150/',
+        },{
+            photo: dznow_img2, //'https://picsum.photos/id/1015/1000/600/',
+            thumbnail: dznow_img2, //'https://picsum.photos/id/1015/250/150/',
+        },{
+            photo: dznow_img3, //'https://picsum.photos/id/1015/1000/600/',
+            thumbnail: dznow_img3, //'https://picsum.photos/id/1015/250/150/',
+        },
+    ]
+}, {
     title: 'PROJECTS.SAYARADZ.TITLE',
     desciption: 'PROJECTS.SAYARADZ.DESCRIPTION',
+    lang: 'PROJECTS.SAYARADZ.LANG',
     picture: sayaradz,
     year: '2018',
     technologies: [angularLogo,nodeLogo , materialLogo],
@@ -85,26 +106,9 @@ const projects = [ {
         {photo: sayaradz_img13, thumbnail: sayaradz_img13 },
     ]
 },  {
-    title: 'PROJECTS.DZNOW.TITLE',
-    desciption: 'PROJECTS.DZNOW.DESCRIPTION',
-    picture: dznow,
-    year: '2019',
-    technologies: [kotlinLogo ,nodeLogo, materialLogo, herokuLogo],
-    captures: [
-        {
-            photo: dznow_img1, //'https://picsum.photos/id/1015/1000/600/',
-            thumbnail: dznow_img1, //'https://picsum.photos/id/1015/250/150/',
-        },{
-            photo: dznow_img2, //'https://picsum.photos/id/1015/1000/600/',
-            thumbnail: dznow_img2, //'https://picsum.photos/id/1015/250/150/',
-        },{
-            photo: dznow_img3, //'https://picsum.photos/id/1015/1000/600/',
-            thumbnail: dznow_img3, //'https://picsum.photos/id/1015/250/150/',
-        },
-    ]
-},{
     title: 'PROJECTS.LOGISTIQUE.TITLE',
     desciption: '',
+    lang: 'PROJECTS.SAYARADZ.LANG',
     year: '2020',
     picture: laptop,
     technologies: [jqueryLogo,nodeLogo],
