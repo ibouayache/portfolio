@@ -36,7 +36,7 @@ class ToolsComponent extends Component {
             <Grid  spacing={6} container direction="column" justify="center" alignItems="stretch">
                 <Grid item container justify="center" direction="column" alignItems="center" >
                     <Typography style={{color: '#0e0153'}} gutterBottom variant="h4">
-                        TOOLS I USE
+                        {t("TOOLS")}
                     </Typography>
                     <div className={classes.line}></div>
                 </Grid>
@@ -72,6 +72,18 @@ class ToolsComponent extends Component {
                                     <Tooltip arrow
                                              title={
                                                  <React.Fragment>
+                                                     <Typography color="inherit">Slack</Typography>
+                                                 </React.Fragment>
+                                             }
+                                    >
+                                        <img className={classes.logo}
+                                             src="https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png"/>
+                                    </Tooltip>
+                                </Grid>
+                                <Grid item xs={2} style={{textAlign:"center"}}>
+                                    <Tooltip arrow
+                                             title={
+                                                 <React.Fragment>
                                                      <Typography color="inherit">WebStorm</Typography>
                                                  </React.Fragment>
                                              }
@@ -80,6 +92,10 @@ class ToolsComponent extends Component {
                                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/WebStorm.png/1200px-WebStorm.png"/>
                                     </Tooltip>
                                 </Grid>
+
+                            </Grid>
+                            <Grid item container spacing={4} direction="row" justify="center" alignItems="center">
+
                                 <Grid item xs={2} style={{textAlign:"center"}}>
                                     <Tooltip arrow
                                              title={
@@ -88,12 +104,23 @@ class ToolsComponent extends Component {
                                                  </React.Fragment>
                                              }
                                     >
-                                    <img className={classes.logo}
-                                         src="https://i.pinimg.com/originals/4e/74/7c/4e747c82368d9681b75d54f56319dae7.png"/>
+                                        <img className={classes.logo}
+                                             src="https://i.pinimg.com/originals/4e/74/7c/4e747c82368d9681b75d54f56319dae7.png"/>
                                     </Tooltip>
                                 </Grid>
-                            </Grid>
-                            <Grid item container spacing={4} direction="row" justify="center" alignItems="center">
+
+                                <Grid item  xs={2} style={{textAlign:"center"}}>
+                                    <Tooltip arrow
+                                             title={
+                                                 <React.Fragment>
+                                                     <Typography color="inherit">Postman</Typography>
+                                                 </React.Fragment>
+                                             }
+                                    >
+                                        <img className={classes.logo}
+                                             src="https://user-images.githubusercontent.com/7853266/44114706-9c72dd08-9fd1-11e8-8d9d-6d9d651c75ad.png"/>
+                                    </Tooltip>
+                                </Grid>
                                 <Grid item  xs={2} style={{textAlign:"center"}}>
                                     <Tooltip arrow
                                              title={
@@ -102,34 +129,11 @@ class ToolsComponent extends Component {
                                                  </React.Fragment>
                                              }
                                     >
-                                    <img className={classes.logo}
-                                         src="https://cdn.iconscout.com/icon/free/png-512/heroku-225989.png"/>
+                                        <img className={classes.logo}
+                                             src="https://cdn.iconscout.com/icon/free/png-512/heroku-5-569467.png"/>
                                     </Tooltip>
                                 </Grid>
-                                <Grid item xs={2} style={{textAlign:"center"}}>
-                                    <Tooltip arrow
-                                             title={
-                                                 <React.Fragment>
-                                                     <Typography color="inherit">Slack</Typography>
-                                                 </React.Fragment>
-                                             }
-                                    >
-                                    <img className={classes.logo}
-                                         src="https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png"/>
-                                    </Tooltip>
-                                </Grid>
-                                <Grid item xs={2} style={{textAlign:"center"}}>
-                                    <Tooltip arrow
-                                             title={
-                                                 <React.Fragment>
-                                                     <Typography color="inherit">PyCharm</Typography>
-                                                 </React.Fragment>
-                                             }
-                                    >
-                                    <img className={classes.logo}
-                                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/PyCharm_Logo.svg/2000px-PyCharm_Logo.svg.png"/>
-                                    </Tooltip>
-                                    </Grid>
+
 
 
                             </Grid>

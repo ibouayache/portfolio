@@ -143,6 +143,7 @@ class HomeComponent extends Component {
 
     constructor(props) {
         super(props);
+        this.changeLangage(props.lang);
         this.state = {
             mobileOpen: false,
             coloredHeader: false,
@@ -154,6 +155,7 @@ class HomeComponent extends Component {
         this.projectsRef = React.createRef();
         this.aboutRef = React.createRef();
     }
+
 
     setCVDialogOpen = (value) =>{
         this.setState({
@@ -377,7 +379,7 @@ class HomeComponent extends Component {
                                 </Grid>
                                 <Grid item xs={1}>
 
-                                    <Button href={cv} className={classes.headerBtn}>
+                                    <Button href="https://drive.google.com/file/d/1Z5ztUG_xSGms4oUL_-vRCZpYxNaF5fh1/view?usp=sharing" className={classes.headerBtn}>
                                         <GetApp color="white"></GetApp> {t("CV")}
                                     </Button>
                                     <CVDialog open={this.state.cvDialogOpened} closeCVDialog={this.closeCVDialog}></CVDialog>

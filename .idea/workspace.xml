@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="414eeb78-bd1c-48b6-b00c-99e8e0d3d18b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/about_me.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about_me.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/my_projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/my_projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tools.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tools.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/translation/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/translation/ar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/translation/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/translation/en.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/translation/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/translation/fr.js" afterDir="false" />
@@ -50,16 +52,16 @@
     <property name="ts.external.directory.path" value="C:\Users\User\AppData\Local\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\WebstormProjects\portfolio\src\translation" />
-      <recent name="C:\Users\User\WebstormProjects\portfolio\src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\WebstormProjects\portfolio\src\res" />
       <recent name="C:\Users\User\WebstormProjects\portfolio\src\data\captures\sayaradz" />
       <recent name="C:\Users\User\WebstormProjects\portfolio\src\data\captures\dznow" />
       <recent name="C:\Users\User\WebstormProjects\portfolio\src\data\captures\myparking" />
       <recent name="C:\Users\User\WebstormProjects\portfolio\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\portfolio\src\translation" />
+      <recent name="C:\Users\User\WebstormProjects\portfolio\src" />
     </key>
   </component>
   <component name="RunManager">
@@ -112,6 +114,8 @@
       <workItem from="1599596544436" duration="2188000" />
       <workItem from="1599647242643" duration="6154000" />
       <workItem from="1599743946305" duration="2463000" />
+      <workItem from="1600123623813" duration="64000" />
+      <workItem from="1600282017627" duration="2805000" />
     </task>
     <servers />
   </component>

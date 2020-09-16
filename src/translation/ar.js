@@ -18,6 +18,7 @@ const translation = {
     "ERROR_MSG": "حدث خطأ.",
     "CV": "CV",
     "APP_LANG": "اللغات المتوفرة :",
+    "TOOLS": "البرامج التي أستخدمها",
     "PROJECTS": {
         "MYPARKING": {
             "TITLE": "My Parking",
