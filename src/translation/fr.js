@@ -19,6 +19,7 @@ const translation = {
     "CV": "CV",
     "APP_LANG": "Langues disponibles :",
     "TOOLS":"OUTILS QUE J'UTILISE",
+    "SEND_ME": "Envoyez moi vos messages ou questions ?",
     "PROJECTS": {
         "MYPARKING": {
             "TITLE": "My Parking",
@@ -41,9 +42,11 @@ const translation = {
                 "L'application propose aussi un lecteur qui permet de visualier les vidéos liés aux différents articles.",
             "LANG":"Français, Arabe."
         },
-        "LOGISTIQUE": {
-            "TITLE": "Système de gestion logistique",
-            "DESCRIPTION": "Cars Website fr"
+        "CHATAPP": {
+            "TITLE": "Chat App",
+            "DESCRIPTION": "Une application de chat web responsive adaptée a tout type d'écran, qui permet d'envoyer des messages "+
+                "a des contacts et recevoir des notifications en temps réel.",
+            "LANG":"Anglais."
         },
     },
     "ABOUT": {
@@ -64,8 +67,8 @@ const translation = {
             "DESCRIPTION": "Conception des architectures logiciels optimisés et suivant les bonnes pratiques.",
         },
         "ITEM5": {
-            "TITLE": "RESOLUTION",
-            "DESCRIPTION": "Mise en ouvre des solutions informatique pour differents problèmes d'ingénierie.",
+            "TITLE": "RÉSOLUTION",
+            "DESCRIPTION": "Mise en oeuvre des solutions informatique pour differents problèmes d'ingénierie.",
         },
 
     }

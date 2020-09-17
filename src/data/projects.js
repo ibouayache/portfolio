@@ -7,10 +7,14 @@ import angularLogo from "../res/angular.png"
 import djangoLogo from "../res/django.png"
 import hereLogo from "../res/here.png"
 import materialLogo from "../res/material.png"
+import laravelLogo from "../res/laravel.jpg"
+import reactLogo from "../res/react.jpg"
+
 import laptop from "../res/macbookpro.png"
 import sayaradz from "../res/sayaradz.png"
 import dznow from "../res/dznow.png"
 import myparking from "../res/myparking.png"
+import chatapp from "../res/chatapp.png"
 import myparking_img1 from "./captures/myparking/myparking_img1.jpg";
 import myparking_img2 from "./captures/myparking/myparking_img2.jpg";
 import myparking_img3 from "./captures/myparking/myparking_img3.jpg";
@@ -106,12 +110,12 @@ const projects = [ {
         {photo: sayaradz_img13, thumbnail: sayaradz_img13 },
     ]
 },  {
-    title: 'PROJECTS.LOGISTIQUE.TITLE',
-    desciption: '',
-    lang: 'PROJECTS.SAYARADZ.LANG',
-    year: '2020',
-    picture: laptop,
-    technologies: [jqueryLogo,nodeLogo],
+    title: 'PROJECTS.CHATAPP.TITLE',
+    desciption: 'PROJECTS.CHATAPP.DESCRIPTION',
+    lang: 'PROJECTS.CHATAPP.LANG',
+    year: '2019',
+    picture: chatapp,
+    technologies: [reactLogo,laravelLogo],
     captures: []
 },];
 export default projects;

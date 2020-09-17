@@ -19,6 +19,7 @@ const translation = {
     "CV": "CV",
     "APP_LANG": "اللغات المتوفرة :",
     "TOOLS": "البرامج التي أستخدمها",
+    "SEND_ME": "أرسل لي رسائل أو أسئلة ؟",
     "PROJECTS": {
         "MYPARKING": {
             "TITLE": "My Parking",
@@ -35,31 +36,32 @@ const translation = {
             "LANG":"الفرنسية، العربية.",
             "DESCRIPTION": "تطبيق للهاتف المحمول يقدم للمستخدمين آخر الأخبار المأخوذة من مواقع إخبارية مختلفة على الإنترنت (في الجزائر) ، من فئات مختلفة (رياضة ، سياسة ، بيئة ، ...). يوفر التطبيق أيضًا مشغلًا يتيح لك مشاهدة مقاطع الفيديو المرتبطة بمقالات مختلفة."
         },
-        "LOGISTIQUE": {
-            "TITLE": "Système de gestion logistique",
-            "DESCRIPTION": "Cars Website fr"
+        "CHATAPP": {
+            "TITLE": "Chat App",
+            "DESCRIPTION": "تطبيق دردشة على شبكة الإنترنت سريع الاستجابة مناسب لأي نوع من الشاشات ، والذي يسمح لك بإرسال رسائل إلى جهات الاتصال وتلقي الإشعارات في الوقت الفعلي.",
+            "LANG":"الإنجليزية."
         },
     },
     "ABOUT": {
         "ITEM1": {
-            "TITLE": "DESIGN",
-            "DESCRIPTION": "Conception d'interfaces web/mobile modernes et responsives.",
+            "TITLE": "التصميم",
+            "DESCRIPTION": "تصميم واجهات ويب / موبايل حديثة تتكيف مع أي نوع من الشاشات.",
         },
         "ITEM2": {
-            "TITLE": "WEB",
-            "DESCRIPTION": "Développement des interfaces web et côté serveur des applications (FullStack).",
+            "TITLE": "ويب",
+            "DESCRIPTION": "تطوير واجهات الويب وجانب الخادم للتطبيقات (FullStack).",
         },
         "ITEM3": {
-            "TITLE": "MOBILE",
-            "DESCRIPTION": "Développement des applications mobiles (Android).",
+            "TITLE": "موبايل",
+            "DESCRIPTION": "تطوير تطبيقات الموبايل (أندرويد).",
         },
         "ITEM4": {
-            "TITLE": "ARCHITECTURE",
-            "DESCRIPTION": "Conception des architectures logiciels optimisés et suivant les bonnes pratiques.",
+            "TITLE": "هندسة",
+            "DESCRIPTION": "تصميم هياكل البرامج المحسنة واتباع أفضل الممارسات.",
         },
         "ITEM5": {
-            "TITLE": "RESOLUTION",
-            "DESCRIPTION": "Mise en ouvre des solutions informatique pour differents problèmes d'ingénierie.",
+            "TITLE": "الدراسة والتنفيذ",
+            "DESCRIPTION": "تنفيذ حلول تقنية المعلومات لمختلف المشاكل الهندسية.",
         },
 
     }

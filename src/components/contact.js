@@ -190,7 +190,7 @@ class ContactComponent extends Component {
                 </Grid>
                 <Grid item>
                     <Typography style={{ color: 'white'}} paragraph>
-                        Envoyez moi vos messages ou questions ?
+                        {t("SEND_ME")}
                     </Typography>
                 </Grid>
                 <Grid container item>

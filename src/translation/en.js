@@ -19,6 +19,7 @@ const translation = {
     "CV": "CV",
     "APP_LANG": "Available languages :",
     "TOOLS":"TOOLS I USE",
+    "SEND_ME": "Send me your messages or questions ?",
     "PROJECTS": {
         "MYPARKING": {
             "TITLE": "My Parking",
@@ -41,31 +42,33 @@ const translation = {
                 "The application also offers a player that allows to watch videos linked to different articles.",
             "LANG":"French, Arabic."
         },
-        "LOGISTIQUE": {
-            "TITLE": "Système de gestion logistique",
-            "DESCRIPTION": "Cars Website fr"
+        "CHATAPP": {
+            "TITLE": "Chat App",
+            "DESCRIPTION": "A responsive web chat application suitable for any type of screen, which allows you to "+
+                "send messages to contacts and receive notifications in real time.",
+            "LANG":"English."
         },
     },
     "ABOUT": {
         "ITEM1": {
             "TITLE": "DESIGN",
-            "DESCRIPTION": "Conception d'interfaces web/mobile modernes et responsives.",
+            "DESCRIPTION": "Design of modern and responsive web / mobile interfaces.",
         },
         "ITEM2": {
             "TITLE": "WEB",
-            "DESCRIPTION": "Développement des interfaces web et côté serveur des applications (FullStack).",
+            "DESCRIPTION": "Development of web interfaces and server side of applications (Full Stack).",
         },
         "ITEM3": {
             "TITLE": "MOBILE",
-            "DESCRIPTION": "Développement des applications mobiles (Android).",
+            "DESCRIPTION": "Development of mobile applications on Android system",
         },
         "ITEM4": {
             "TITLE": "ARCHITECTURE",
-            "DESCRIPTION": "Conception des architectures logiciels optimisés et suivant les bonnes pratiques.",
+            "DESCRIPTION": "Design of optimized software architectures following best practices.",
         },
         "ITEM5": {
             "TITLE": "RESOLUTION",
-            "DESCRIPTION": "Mise en ouvre des solutions logiciels pour differents problèmes d'ingénierie.",
+            "DESCRIPTION": "Implementation of software solutions for various engineering problems.",
         },
 
     }

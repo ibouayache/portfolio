@@ -5,7 +5,13 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import Tooltip from "@material-ui/core/Tooltip";
-
+import github from "../res/tools/github.png";
+import xd from "../res/tools/xd.png";
+import webstorm from "../res/tools/webstorm.png";
+import androids from "../res/tools/as.png";
+import slack from "../res/tools/slack.png";
+import postman from "../res/tools/postman.png";
+import heroku from "../res/tools/heroku.png";
 const classes = (theme) => ({
     line: {
         background: '#0e0153',
@@ -52,8 +58,11 @@ class ToolsComponent extends Component {
                                             </React.Fragment>
                                         }
                                     >
-                                        <img className={classes.logo}
-                                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png"/>
+                                        <a href="https://github.com/">
+                                            <img className={classes.logo} alt="Github"
+                                                 src={github}/>
+                                        </a>
+
                                     </Tooltip>
                                     </Grid>
                                 <Grid item xs={2} style={{textAlign:"center"}}>
@@ -64,20 +73,26 @@ class ToolsComponent extends Component {
                                                  </React.Fragment>
                                              }
                                     >
-                                    <img className={classes.logo}
-                                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png"/>
+                                        <a href="https://www.adobe.com/products/xd.html">
+                                            <img className={classes.logo} alt="AdobeXD"
+                                                 src={xd}/>
+                                        </a>
+
                                     </Tooltip>
                                     </Grid>
                                 <Grid item xs={2} style={{textAlign:"center"}}>
-                                    <Tooltip arrow
+                                    <Tooltip  arrow
                                              title={
                                                  <React.Fragment>
                                                      <Typography color="inherit">Slack</Typography>
                                                  </React.Fragment>
                                              }
                                     >
-                                        <img className={classes.logo}
-                                             src="https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png"/>
+                                        <a href="https://slack.com">
+                                            <img className={classes.logo} alt="Slack"
+                                                 src={slack}/>
+                                        </a>
+
                                     </Tooltip>
                                 </Grid>
                                 <Grid item xs={2} style={{textAlign:"center"}}>
@@ -88,8 +103,11 @@ class ToolsComponent extends Component {
                                                  </React.Fragment>
                                              }
                                     >
-                                    <img className={classes.logo}
-                                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/WebStorm.png/1200px-WebStorm.png"/>
+                                        <a href="https://www.jetbrains.com/webstorm/">
+                                            <img className={classes.logo} alt="WebStorm"
+                                                 src={webstorm}/>
+
+                                        </a>
                                     </Tooltip>
                                 </Grid>
 
@@ -104,9 +122,12 @@ class ToolsComponent extends Component {
                                                  </React.Fragment>
                                              }
                                     >
-                                        <img className={classes.logo}
-                                             src="https://i.pinimg.com/originals/4e/74/7c/4e747c82368d9681b75d54f56319dae7.png"/>
-                                    </Tooltip>
+                                        <a href="https://developer.android.com/studio">
+                                            <img className={classes.logo} alt="AndroidStudio"
+                                                 src={androids}/>
+
+                                        </a>
+                                       </Tooltip>
                                 </Grid>
 
                                 <Grid item  xs={2} style={{textAlign:"center"}}>
@@ -117,8 +138,10 @@ class ToolsComponent extends Component {
                                                  </React.Fragment>
                                              }
                                     >
+                                        <a href="https://www.postman.com/">
                                         <img className={classes.logo}
-                                             src="https://user-images.githubusercontent.com/7853266/44114706-9c72dd08-9fd1-11e8-8d9d-6d9d651c75ad.png"/>
+                                             src={postman}/>
+                                        </a>
                                     </Tooltip>
                                 </Grid>
                                 <Grid item  xs={2} style={{textAlign:"center"}}>
@@ -129,8 +152,11 @@ class ToolsComponent extends Component {
                                                  </React.Fragment>
                                              }
                                     >
-                                        <img className={classes.logo}
-                                             src="https://cdn.iconscout.com/icon/free/png-512/heroku-5-569467.png"/>
+                                        <a href="https://www.heroku.com">
+                                            <img className={classes.logo}
+                                                 src={heroku}/>
+                                        </a>
+
                                     </Tooltip>
                                 </Grid>
 
