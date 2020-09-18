@@ -31,7 +31,7 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "latest"
   },
-  "homepage": "https://islam2018.github.io/portfolio",
+  "homepage": "https://ibouayache.github.io/portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
