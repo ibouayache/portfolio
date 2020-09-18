@@ -9,7 +9,7 @@ import {
     Switch,
     Route,
     Link,
-    useParams, Redirect
+    useParams, Redirect, HashRouter
 } from "react-router-dom";
 import 'react-bnb-gallery/dist/style.css'
 import bg404 from "./res/bg_404.png"
@@ -35,7 +35,7 @@ function App() {
     return (
     <div style={{direction:i18n.language==='ar' ?  'rtl' : 'ltr'}}>
         <ThemeProvider theme={theme}>
-            <Router>
+            <HashRouter basename="/">
                 <Switch>
                     <Route exact path="/">
                         <Redirect to="/fr" />
@@ -51,7 +51,7 @@ function App() {
                     </Route>
                 </Switch>
 
-            </Router>
+            </HashRouter>
 
         </ThemeProvider>
     </div>
