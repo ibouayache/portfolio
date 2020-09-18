@@ -5,11 +5,10 @@ import HomeComponent from "./components/home";
 import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import {useTranslation, withTranslation} from "react-i18next";
 import {
-    BrowserRouter as Router,
     Switch,
     Route,
     Link,
-    useParams, Redirect, HashRouter
+    useParams, Redirect, HashRouter, BrowserRouter
 } from "react-router-dom";
 import 'react-bnb-gallery/dist/style.css'
 import bg404 from "./res/bg_404.png"
@@ -35,24 +34,24 @@ function App() {
     return (
     <div style={{direction:i18n.language==='ar' ?  'rtl' : 'ltr'}}>
         <ThemeProvider theme={theme}>
-            <HashRouter basename="/">
-                <Switch>
-                    <Route exact path="/">
-                        <Redirect to="/fr" />
-                    </Route>
-                    <Route path="/fr" children={<HomeComponent lang={"fr"}/>} />
-                    <Route path="/en" children={<HomeComponent lang={"en"}/>} />
-                    <Route path="/ar" children={<HomeComponent lang={"ar"}/>} />
-                    <Route path="*">
-                        <div style={{
-                            backgroundColor:"#f5f5f5", width:'100vw', height:'100vh', display:'flex', alignItems:'center', justifyContent:'center'}}>
-                            <img src={bg404} alt="404 Error" style={{width:'150px'}}/>
-                        </div>
-                    </Route>
-                </Switch>
-
+            <HashRouter basename={process.env.PUBLIC_URL}>
+                <Route render = {({ location }) => (
+                        <Switch location={location}>
+                            <Route exact path="/">
+                                <Redirect to="/fr" />
+                            </Route>
+                            <Route path="/fr" children={<HomeComponent lang={"fr"}/>} />
+                            <Route path="/en" children={<HomeComponent lang={"en"}/>} />
+                            <Route path="/ar" children={<HomeComponent lang={"ar"}/>} />
+                            <Route path="*">
+                                <div style={{
+                                    backgroundColor:"#f5f5f5", width:'100vw', height:'100vh', display:'flex', alignItems:'center', justifyContent:'center'}}>
+                                    <img src={bg404} alt="404 Error" style={{width:'150px'}}/>
+                                </div>
+                            </Route>
+                        </Switch>
+                )} />
             </HashRouter>
-
         </ThemeProvider>
     </div>
   );
