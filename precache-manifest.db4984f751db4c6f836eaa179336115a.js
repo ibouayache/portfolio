@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bc1bb61570e04309bc8eb478235cde60",
+    "revision": "869bcf770a6a4fdf518633d1e451d9ab",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "5a8bffae7f8df8a6447b",
+    "revision": "41d475a41e0081de137a",
     "url": "/portfolio/static/css/2.0586ca9c.chunk.css"
   },
   {
-    "revision": "8c3fc0166803f9c3bf38",
+    "revision": "0b4ce186a6d39a19448f",
     "url": "/portfolio/static/css/main.edfc2c49.chunk.css"
   },
   {
-    "revision": "5a8bffae7f8df8a6447b",
-    "url": "/portfolio/static/js/2.99afa3a5.chunk.js"
+    "revision": "41d475a41e0081de137a",
+    "url": "/portfolio/static/js/2.c1973735.chunk.js"
   },
   {
     "revision": "3cf78c2837307bb6bc356b4159050203",
-    "url": "/portfolio/static/js/2.99afa3a5.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.c1973735.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8c3fc0166803f9c3bf38",
-    "url": "/portfolio/static/js/main.db1d6fb5.chunk.js"
+    "revision": "0b4ce186a6d39a19448f",
+    "url": "/portfolio/static/js/main.a1438346.chunk.js"
   },
   {
     "revision": "7a6cc99bd8f08f9fa6ec",
@@ -46,6 +46,30 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "db2977e98ded4f6bf294662184afef33",
     "url": "/portfolio/static/media/chatapp.db2977e9.png"
+  },
+  {
+    "revision": "4e6c94fe3f456a2579d573c126165082",
+    "url": "/portfolio/static/media/chatapp_img1.4e6c94fe.PNG"
+  },
+  {
+    "revision": "ff795addc9e120f8388c557837b7169d",
+    "url": "/portfolio/static/media/chatapp_img2.ff795add.PNG"
+  },
+  {
+    "revision": "a04360875691fb071442d2b1a1c4f9af",
+    "url": "/portfolio/static/media/chatapp_img3.a0436087.PNG"
+  },
+  {
+    "revision": "fe43c6bf69c1f98b937f878a2f78b18b",
+    "url": "/portfolio/static/media/chatapp_img5.fe43c6bf.png"
+  },
+  {
+    "revision": "8b06d688626bcb48f8b7a5f80d5b47ea",
+    "url": "/portfolio/static/media/chatapp_img6.8b06d688.PNG"
+  },
+  {
+    "revision": "4d9e024f73e24ea63b09323b56c1cf19",
+    "url": "/portfolio/static/media/chatapp_img7.4d9e024f.PNG"
   },
   {
     "revision": "f1ae2b7bf233e3f87173a52d21b314d8",
