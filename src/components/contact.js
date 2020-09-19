@@ -14,6 +14,8 @@ import {Controller, useForm} from "react-hook-form";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import Snackbar from "@material-ui/core/Snackbar";
 import Alert from '@material-ui/lab/Alert';
+import Tooltip from "@material-ui/core/Tooltip";
+
 const CssTextField = withStyles({
     root: {
         '& input': {
@@ -55,10 +57,10 @@ let ContactForm = props => {
     const {handleSubmit, register, errors, control, reset} = useForm();
 
     const onSubmit = data => {
-        props.sendNewMessage(data.name, data.email, data.content, ()=>{
+        props.sendNewMessage(data.name, data.email, data.content, () => {
             reset();
             openSuccessMessage();
-        }, ()=> {
+        }, () => {
             openErrorMessage();
         })
     };
@@ -103,7 +105,7 @@ let ContactForm = props => {
         </Grid>
         <Grid container item alignItems="center" justify="space-between" style={{paddingTop: '15px'}} xs={12}>
             <Grid item>
-                {props.msgState.isLoading ?  <CircularProgress size={25} style={{color:"white"}}/> : '' }
+                {props.msgState.isLoading ? <CircularProgress size={25} style={{color: "white"}}/> : ''}
                 <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
                     <Alert elevation={6} variant="filled" onClose={handleClose} severity="success">
                         {t("SUCCESS_MSG")}
@@ -142,7 +144,7 @@ const mapStateToProps = state => ({
 });
 const mapDispatchToProps = dispatch => ({
     sendNewMessage: (name, email, content, successCallback, errorCallback) =>
-        dispatch(sendMessage(name, email, content, successCallback,errorCallback ))
+        dispatch(sendMessage(name, email, content, successCallback, errorCallback))
 });
 ContactForm = connect(mapStateToProps, mapDispatchToProps)(ContactForm);
 
@@ -189,7 +191,7 @@ class ContactComponent extends Component {
 
                 </Grid>
                 <Grid item>
-                    <Typography style={{ color: 'white'}} paragraph>
+                    <Typography style={{color: 'white'}} paragraph>
                         {t("SEND_ME")}
                     </Typography>
                 </Grid>
@@ -200,15 +202,41 @@ class ContactComponent extends Component {
                             <Grid container direction="column" alignItems="center" item justify="center"
                                   style={{paddingTop: '5px', paddingBottom: '15px'}} xs={12}>
                                 <Grid item xs={6} container justify="center" alignItems="center">
-                                    <Button className={classes.socialBtn}>
-                                        <img src={linkedin} style={{width: '25px'}}/>
-                                    </Button>
-                                    <Button className={classes.socialBtn} href="mailto:fm_bouayache@€si.dz">
-                                        <img src={mail} style={{width: '25px'}}/>
-                                    </Button>
-                                    <Button className={classes.socialBtn}>
-                                        <img src={github} style={{width: '25px'}}/>
-                                    </Button>
+                                    <Tooltip arrow
+                                             title={
+                                                 <React.Fragment>
+                                                     <Typography
+                                                         color="inherit">linkedin.com/in/islam-bouayache</Typography>
+                                                 </React.Fragment>
+                                             }
+                                    >
+                                        <Button className={classes.socialBtn}
+                                                href="https://www.linkedin.com/in/islam-bouayache/">
+                                            <img src={linkedin} style={{width: '25px'}}/>
+                                        </Button>
+                                    </Tooltip>
+                                    <Tooltip arrow
+                                             title={
+                                                 <React.Fragment>
+                                                     <Typography color="inherit">fm_bouayache@esi.dz</Typography>
+                                                 </React.Fragment>
+                                             }
+                                    >
+                                        <Button className={classes.socialBtn} href="mailto:fm_bouayache@esi.dz">
+                                            <img src={mail} style={{width: '25px'}}/>
+                                        </Button>
+                                    </Tooltip>
+                                    <Tooltip arrow
+                                             title={
+                                                 <React.Fragment>
+                                                     <Typography color="inherit">github.com/islam2018</Typography>
+                                                 </React.Fragment>
+                                             }
+                                    >
+                                        <Button className={classes.socialBtn} href="https://github.com/islam2018">
+                                            <img src={github} style={{width: '25px'}}/>
+                                        </Button>
+                                    </Tooltip>
                                 </Grid>
                                 <Grid item xs={10} container justify="center" alignItems="center">
                                     <Typography paragraph style={{color: '#3886c6'}}>

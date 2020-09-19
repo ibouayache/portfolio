@@ -302,7 +302,7 @@ class HomeComponent extends Component {
                             <ListItemText primary={text}/>
                         </ListItem>
                     ))}
-                    <ListItem button href="https://drive.google.com/file/d/1Z5ztUG_xSGms4oUL_-vRCZpYxNaF5fh1/view?usp=sharing">
+                    <ListItem button href="https://drive.google.com/file/d/155IVPN-JloPIk5WdIA9V0csYjSxVOjSo/view?usp=sharing">
                         <ListItemIcon>
                             <GetApp color="white"></GetApp>
                         </ListItemIcon>
@@ -379,7 +379,7 @@ class HomeComponent extends Component {
                                 </Grid>
                                 <Grid item xs={1}>
 
-                                    <Button href="https://drive.google.com/file/d/1Z5ztUG_xSGms4oUL_-vRCZpYxNaF5fh1/view?usp=sharing" className={classes.headerBtn}>
+                                    <Button href="https://drive.google.com/file/d/155IVPN-JloPIk5WdIA9V0csYjSxVOjSo/view?usp=sharing" className={classes.headerBtn}>
                                         <GetApp color="white"></GetApp> {t("CV")}
                                     </Button>
                                     <CVDialog open={this.state.cvDialogOpened} closeCVDialog={this.closeCVDialog}></CVDialog>

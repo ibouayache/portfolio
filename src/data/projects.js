@@ -36,7 +36,12 @@ import sayaradz_img10 from "./captures/sayaradz/sayaradz_img10.PNG";
 import sayaradz_img11 from "./captures/sayaradz/sayaradz_img11.PNG";
 import sayaradz_img12 from "./captures/sayaradz/sayaradz_img12.jpg";
 import sayaradz_img13 from "./captures/sayaradz/sayaradz_img13.jpg";
-
+import chatapp_img1 from "./captures/chatapp/chatapp_img1.PNG";
+import chatapp_img2 from "./captures/chatapp/chatapp_img2.PNG";
+import chatapp_img3 from "./captures/chatapp/chatapp_img3.PNG";
+import chatapp_img5 from "./captures/chatapp/chatapp_img5.png";
+import chatapp_img6 from "./captures/chatapp/chatapp_img6.PNG";
+import chatapp_img7 from "./captures/chatapp/chatapp_img7.PNG";
 const projects = [ {
     title: 'PROJECTS.MYPARKING.TITLE',
     desciption: 'PROJECTS.MYPARKING.DESCRIPTION',
@@ -116,6 +121,13 @@ const projects = [ {
     year: '2019',
     picture: chatapp,
     technologies: [reactLogo,laravelLogo],
-    captures: []
+    captures: [ {photo: chatapp_img1, thumbnail: chatapp_img1 },
+        {photo: chatapp_img2, thumbnail: chatapp_img2 },
+        {photo: chatapp_img3, thumbnail: chatapp_img3 },
+        {photo: chatapp_img5, thumbnail: chatapp_img5 },
+        {photo: chatapp_img6, thumbnail: chatapp_img6 },
+        {photo: chatapp_img7, thumbnail: chatapp_img7 },
+
+    ]
 },];
 export default projects;

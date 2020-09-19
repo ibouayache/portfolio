@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="414eeb78-bd1c-48b6-b00c-99e8e0d3d18b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/projects.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,23 +41,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/res" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/data/captures/chatapp" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\User\AppData\Local\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\WebstormProjects\portfolio\src\translation" />
-      <recent name="C:\Users\User\WebstormProjects\portfolio\src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\portfolio\src\data\captures\chatapp" />
       <recent name="C:\Users\User\WebstormProjects\portfolio\src\res" />
       <recent name="C:\Users\User\WebstormProjects\portfolio\src\data\captures\sayaradz" />
       <recent name="C:\Users\User\WebstormProjects\portfolio\src\data\captures\dznow" />
       <recent name="C:\Users\User\WebstormProjects\portfolio\src\data\captures\myparking" />
-      <recent name="C:\Users\User\WebstormProjects\portfolio\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\portfolio\src\translation" />
+      <recent name="C:\Users\User\WebstormProjects\portfolio\src" />
     </key>
   </component>
   <component name="RunManager">
@@ -111,7 +114,9 @@
       <workItem from="1600282017627" duration="3194000" />
       <workItem from="1600334208354" duration="3831000" />
       <workItem from="1600377880665" duration="1430000" />
-      <workItem from="1600427155140" duration="2550000" />
+      <workItem from="1600427155140" duration="5196000" />
+      <workItem from="1600454743456" duration="69000" />
+      <workItem from="1600543494808" duration="867000" />
     </task>
     <servers />
   </component>
@@ -127,10 +132,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1598894261692" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1597921614417">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1600454809939">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597921614417" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600454809939" />
     <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1598992471322">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -151,10 +156,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1598957212541" />
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1600435504150">
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1600437550527">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1600435504150" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1600437550527" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1598036788226">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
